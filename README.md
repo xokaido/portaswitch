@@ -12,6 +12,8 @@ API_BASE = "https://mybilling.telinta.com:8442/rest/"
 API_USER = 'test_user'
 API_PASS = 'test_pass'
 
+Please pay desired attention to have /rest/ API instead of SOAP.
+
 For examples check the example.php file.
 
 Thank you!

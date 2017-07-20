@@ -1,5 +1,4 @@
 <?php
-use PortaSwitch;
 
 require_once "vendor/autoload.php";
 
