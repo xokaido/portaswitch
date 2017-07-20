@@ -1,0 +1,13 @@
+*.swp
+*.swo
+*~
+*.pdf
+*.wmv
+*.pl
+.env
+session.txt
+xok.php
+commit.sh
+
+
+/vendor/
