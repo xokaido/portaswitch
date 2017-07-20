@@ -2,9 +2,9 @@
 
 You need to create .env file with
 
-API_BASE = Base URL of the API
-API_USER = The API user 
-API_PASS = The password for the API user
+API_BASE = Base URL of the API<br/>
+API_USER = The API user <br/>
+API_PASS = The password for the API user<br/>
 
 The example should look something like this:
 
