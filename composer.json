@@ -3,6 +3,7 @@
     "description": "The PortaSwitch API client in PHP according to their PortaSwitch_Interfaces_MR45.pdf document",
     "keywords": ["portaswitch"],
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "xokaido T. GNUcious",
