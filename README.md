@@ -1,6 +1,6 @@
 # The README
 
-You need to create .env file with
+You need to create the .env file with
 
 API_BASE = Base URL of the API<br/>
 API_USER = The API user <br/>
