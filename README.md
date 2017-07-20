@@ -6,7 +6,7 @@ API_BASE = Base URL of the API<br/>
 API_USER = The API user <br/>
 API_PASS = The password for the API user<br/>
 
-The example should look something like this:
+The example file should look something like this:
 
 API_BASE = "https://mybilling.telinta.com:8442/rest/"<br/>
 API_USER = 'test_user'<br/>
