@@ -2,7 +2,6 @@
     "name": "xokaido/portaswitch",
     "description": "The PortaSwitch API client in PHP according to their PortaSwitch_Interfaces_MR45.pdf document",
     "keywords": ["portaswitch"],
-    "type": "project",
     "license": "MIT",
     "authors": [
         {
