@@ -2,16 +2,24 @@
 
 require_once "vendor/autoload.php";
 
-// $customer_info = [ 	'name' => 'Xokaido T. GNUcious', 'iso_4217' => 'USD' ];
-// $a = new PortaSwitch\Account();
-// echo $a->add( $customer_info );
-
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
-$c = new PortaSwitch\Customer();
-echo $c->get_list() ."\n";
+$faker = Faker\Factory::create();
 
+// $customer_info = [ 	'name' => $faker->name, 'iso_4217' => 'USD' ];
+// $a = new PortaSwitch\Account();
+// echo $a->add( $customer_info );
+
+
+// $c = new PortaSwitch\Customer();
+// echo $c->get_list() ."\n";
+
+for( $i = 0; $i <= 9; $i++ )
+{
+  echo $faker->macAddress." -> ". $faker->name ." -> ". $faker->address ."\n";
+}
+exit;
 
 $u = new PortaSwitch\UA();
 $ua_info = [	'name' 					=> 'xok Created UA',

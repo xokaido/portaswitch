@@ -21,13 +21,16 @@ class Account extends PortaSwitch
 		 * to create a new account record or update an existing one. If successful,
 		 * the completed data is returned.
 		 * 
-		 * @param  int $account_id The ID of the account
+		 * @param  int $account_info The info to be validated
 		 * @return string    The API response
 		 */
-		public function validate_info( $account_id )
+		public function validate_info( $account_info = [] )
 		{
-				$this->data['params'] = json_encode([ 'i_account' 	=> $account_id ]);
-	    return $this->curl( 'Account/validate_account_info', $this->data );
+				$this->data['params'] = json_encode([ 'account_info' 	=> $account_info ]);
+  	    $this->curl( 'Account/validate_account_info', $this->data );
+        if( $this->is_error() )
+          return false;
+        return true;
 		}
 		/**
 		 * This method allows an API user to get the list of account records. The
@@ -51,7 +54,10 @@ class Account extends PortaSwitch
 		public function add( $account_info = [])
 		{
 				$this->data['params'] = json_encode( [ 'account_info' => $account_info ]);
-	    return $this->curl( 'Account/add_account', $this->data );
+  	    $this->curl( 'Account/add_account', $this->data );
+        if( $this->is_error() )
+          return false;
+      return true;
 		}
 		/**
 		 * This method allows an API user to update an existing account record

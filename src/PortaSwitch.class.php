@@ -15,6 +15,7 @@ class PortaSwitch
         $this->debug        = false;
         $this->error        = '';
         $this->ch           = '';
+        $this->response     = '';
         $this->session_file = '/tmp/session.txt';
 				$this->data         = [ 'auth_info' => json_encode( [ 'session_id' => $this->get_session() ]), ];
 		}
@@ -52,6 +53,10 @@ class PortaSwitch
 		{
 			return $this->error;
 		}
+    public function get_response()
+    {
+        return $this->response;
+    }
 		/**
 		 * Save the session into session_file
 		 * 

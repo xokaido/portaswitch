@@ -44,7 +44,7 @@ class Customer extends PortaSwitch
 		 */
 		public function add( $customer_info = [] )
 		{
-				$this->data['params'] = json_encode( $customer_info );
+				$this->data['params'] = json_encode([ 'customer_info' => $customer_info ]);
 	    	$this->curl( 'Customer/add_customer', $this->data );
 	    	if( $this->is_error() )
 	    		return false;
@@ -59,7 +59,7 @@ class Customer extends PortaSwitch
 		 */
 		public function update( $customer_info = [] )
 		{
-				$this->data['params'] = json_encode( $customer_info );
+        $this->data['params'] = json_encode([ 'customer_info' => $customer_info ]);
 	    return $this->curl( 'Customer/update_customer', $this->data );
 		}
 		/**

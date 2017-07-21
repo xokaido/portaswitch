@@ -3,7 +3,6 @@
     "description": "The PortaSwitch API client in PHP according to their PortaSwitch_Interfaces_MR45.pdf document",
     "keywords": ["portaswitch"],
     "license": "MIT",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "xokaido T. GNUcious",
@@ -14,6 +13,7 @@
         "psr-4": { "PortaSwitch\\": "src/" }
     },
     "require": {
-        "vlucas/phpdotenv": "^2.4"
+        "vlucas/phpdotenv": "^2.4",
+        "fzaninotto/faker": "^1.6"
     }
 }
